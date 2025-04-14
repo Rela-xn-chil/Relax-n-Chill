@@ -24,5 +24,4 @@ Modern fast movie database web app with React using The Movie DB API. All the ne
 - Use the Search bar to find you favorites movies and their information
 - Bookmark and use the App at your own pace!
 
-# Hope You Enjoy the App !
 
