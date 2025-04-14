@@ -1,6 +1,6 @@
-# React Movie rmdb
-[Link to App](http://phobic-heat.surge.sh/)
-![project image](https://oliver-gomes.github.io/images/github%20images/react-movie.png)
+# Relax-n-chil React Movie rmdb
+[Link to App](####################)
+![project image](##########################)
 
 
 ## Table of Contents
@@ -11,7 +11,6 @@
 
 ### How to Load the App
 ```
-git clone https://github.com/oliver-gomes/react-movie.git
 npm install
 npm start
 ```
