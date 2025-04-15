@@ -1,0 +1,68 @@
+.rmdb-heroimage {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh; /* Use viewport height instead of fixed height */
+  min-height: 600px; /* Minimum height for larger screens */
+  max-height: 1200px; /* Maximum height for very large screens */
+  position: relative;
+  animation: animateHeroimage 1s;
+}
+
+@keyframes animateHeroimage {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+.rmdb-heroimage-content {
+  max-width: 1280px;
+  padding: 20px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.rmdb-heroimage-text {
+  z-index: 100;
+  max-width: 700px;
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  right: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+  border-radius: 8px;
+}
+
+.rmdb-heroimage-text h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: clamp(32px, 5vw, 48px); /* Responsive font size */
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.rmdb-heroimage-text p {
+  font-family: 'Abel', sans-serif;
+  font-size: clamp(16px, 2.5vw, 22px); /* Responsive font size */
+  line-height: 1.4;
+  color: #fff;
+}
+
+@media screen and (max-width: 720px) {
+  .rmdb-heroimage {
+    height: 70vh; /* Smaller height on mobile */
+    min-height: 400px;
+  }
+  
+  .rmdb-heroimage-text {
+    bottom: 40px;
+    left: 10px;
+    right: 10px;
+    padding: 15px;
+  }
+}

@@ -1,0 +1,44 @@
+.rmdb-header {
+  width: 100%;
+  height: 70px; /* Reduced header height */
+  background: #070101;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.rmdb-header-content {
+  max-width: 1280px;
+  height: 100%; /* Takes full height of parent */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Perfect vertical centering */
+}
+
+/* Unified logo styling */
+.rmdb-logo,
+.rmdb-tmdb-logo {
+  width: 90px; /* Same smaller size for both */
+  height: auto;
+  object-fit: contain; /* Prevents distortion */
+}
+
+/* Remove all individual margins and floats */
+.rmdb-logo, 
+.rmdb-tmdb-logo {
+  margin: 0;
+  float: none;
+}
+
+@media screen and (max-width: 500px) {
+  .rmdb-header {
+    height: 60px; /* Slightly smaller on mobile */
+    padding: 0 15px;
+  }
+  
+  /* Even smaller logos for mobile */
+  .rmdb-logo,
+  .rmdb-tmdb-logo {
+    width: 70px;
+  }
+}
