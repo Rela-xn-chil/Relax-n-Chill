@@ -4,6 +4,8 @@
   background: #ad45f1;
   padding: 0 20px;
   box-sizing: border-box;
+  border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .rmdb-header-content {

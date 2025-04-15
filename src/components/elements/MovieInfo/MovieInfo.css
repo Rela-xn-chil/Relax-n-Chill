@@ -6,6 +6,8 @@
   padding: 40px 20px;
   box-sizing: border-box;
   animation: animateMovieinfo 1s;
+  /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
 }
 
 @keyframes animateMovieinfo {
