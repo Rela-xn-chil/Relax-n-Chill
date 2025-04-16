@@ -3,29 +3,18 @@ import { API_URL, API_KEY } from "../../config";
 import Navigation from "../elements/Navigation/Navigation";
 import MovieInfo from "../elements/MovieInfo/MovieInfo";
 import MovieInfoBar from "../elements/MovieInfoBar/MovieInfoBar";
-<<<<<<< HEAD
-// import FourColGrid from "../elements/FourColGrid/FourColGrid";
-import Actor from "../elements/Actor/Actor";
-import Spinner from "../elements/Spinner/Spinner";
-import "./Movie.css";
-import FourColGrid from "../elements/FourColGrid/FourColGrid";
-=======
 import Spinner from "../elements/Spinner/Spinner";
 import FourColGrid from "../elements/FourColGrid/FourColGrid";
 import Actor from "../elements/Actor/Actor";  // Ensure you have this imported
 import { Link } from "react-router-dom";
 import MovieThumb from "../elements/MovieThumb/MovieThumb"; // Import for thumbs
->>>>>>> 519420c1dc55a5ee4e7b30ed78e584205f83d801
 
 class Movie extends Component {
   state = {
     movie: null,
     actors: null,
     directors: [],
-<<<<<<< HEAD
-=======
     trailer: null,  // Store trailer key here
->>>>>>> 519420c1dc55a5ee4e7b30ed78e584205f83d801
     loading: false
   };
 
@@ -37,61 +26,18 @@ class Movie extends Component {
       this.setState({ ...state });
     } else {
       this.setState({ loading: true });
-<<<<<<< HEAD
-      //first fetch the movie data and then actors
-      const endpoint = `${API_URL}movie/${
-        this.props.match.params.movieId
-      }?api_key=${API_KEY}&language=en-US`;
-=======
       const endpoint = `${API_URL}movie/${this.props.match.params.movieId}?api_key=${API_KEY}&language=en-US`;
->>>>>>> 519420c1dc55a5ee4e7b30ed78e584205f83d801
       this.fetchMovieData(endpoint);
     }
   }
 
-<<<<<<< HEAD
-  fetchMovieData = endpoint => {
-=======
   fetchMovieData = (endpoint) => {
->>>>>>> 519420c1dc55a5ee4e7b30ed78e584205f83d801
     fetch(endpoint)
       .then(result => result.json())
       .then(result => {
         if (result.status_code) {
           this.setState({ loading: false });
         } else {
-<<<<<<< HEAD
-          this.setState(
-            {
-              movie: result
-            },
-            () => {
-              const endpoint_credit = `${API_URL}movie/${
-                this.props.match.params.movieId
-              }/credits?api_key=${API_KEY}&language=en-US`;
-              fetch(endpoint_credit)
-                .then(result => result.json())
-                .then(result => {
-                  const directors = result.crew.filter(
-                    member => member.job === "Director"
-                  );
-                  this.setState(
-                    {
-                      actors: result.cast,
-                      directors,
-                      loading: false
-                    },
-                    () => {
-                      localStorage.setItem(
-                        `${this.props.match.params.movieId}`,
-                        JSON.stringify(this.state)
-                      );
-                    }
-                  );
-                });
-            }
-          );
-=======
           this.setState({ movie: result }, () => {
             // Fetch Movie Credits
             const endpoint_credit = `${API_URL}movie/${this.props.match.params.movieId}/credits?api_key=${API_KEY}&language=en-US`;
@@ -126,7 +72,6 @@ class Movie extends Component {
                 }
               });
           });
->>>>>>> 519420c1dc55a5ee4e7b30ed78e584205f83d801
         }
       })
       .catch(error => console.error("Error: ", error));
@@ -147,8 +92,6 @@ class Movie extends Component {
               budget={this.state.movie.budget}
               revenue={this.state.movie.revenue}
             />
-<<<<<<< HEAD
-=======
 
             {/* Display Trailer if Available */}
             {this.state.trailer && (
@@ -165,7 +108,6 @@ class Movie extends Component {
                 ></iframe>
               </div>
             )}
->>>>>>> 519420c1dc55a5ee4e7b30ed78e584205f83d801
           </div>
         ) : null}
 
@@ -173,11 +115,7 @@ class Movie extends Component {
           <div className="rmdb-moviegrid">
             <FourColGrid header={"Actors"}>
               {this.state.actors.map((element, i) => {
-<<<<<<< HEAD
-                return <Actor key={i} actor={element} />;
-=======
                 return <Actor key={i} actor={element} />; // Actor component to show actors
->>>>>>> 519420c1dc55a5ee4e7b30ed78e584205f83d801
               })}
             </FourColGrid>
           </div>

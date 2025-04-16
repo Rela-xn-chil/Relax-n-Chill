@@ -1,11 +1,7 @@
 {
   "name": "react_movie_db_course",
   "version": "0.1.0",
-<<<<<<< HEAD
   "private": true,
-=======
-  "private": false,
->>>>>>> 519420c1dc55a5ee4e7b30ed78e584205f83d801
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",

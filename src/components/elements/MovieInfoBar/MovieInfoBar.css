@@ -7,11 +7,8 @@
   box-sizing: border-box;
   font-family: 'Abel', sans-serif;
   font-size: 22px;
-<<<<<<< HEAD
-=======
   border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
->>>>>>> 519420c1dc55a5ee4e7b30ed78e584205f83d801
 }
 
 .rmdb-movieinfobar-content {
@@ -42,8 +39,5 @@
 .fa-budget {
   float: left;
   margin-top: -3px;
-<<<<<<< HEAD
-=======
   border-radius: 10px;
->>>>>>> 519420c1dc55a5ee4e7b30ed78e584205f83d801
 }
