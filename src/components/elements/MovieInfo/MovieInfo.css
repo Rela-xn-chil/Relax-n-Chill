@@ -6,6 +6,11 @@
   padding: 40px 20px;
   box-sizing: border-box;
   animation: animateMovieinfo 1s;
+<<<<<<< HEAD
+=======
+  /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+>>>>>>> 519420c1dc55a5ee4e7b30ed78e584205f83d801
 }
 
 @keyframes animateMovieinfo {

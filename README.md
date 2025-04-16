@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # React Movie rmdb
 [Link to App](http://phobic-heat.surge.sh/)
 ![project image](https://oliver-gomes.github.io/images/github%20images/react-movie.png)
+=======
+# Relax-n-chil React Movie rmdb
+[Link to App](####################)
+![project image](##########################)
+>>>>>>> 519420c1dc55a5ee4e7b30ed78e584205f83d801
 
 
 ## Table of Contents
@@ -11,7 +17,10 @@
 
 ### How to Load the App
 ```
+<<<<<<< HEAD
 git clone https://github.com/oliver-gomes/react-movie.git
+=======
+>>>>>>> 519420c1dc55a5ee4e7b30ed78e584205f83d801
 npm install
 npm start
 ```
@@ -25,5 +34,8 @@ Modern fast movie database web app with React using The Movie DB API. All the ne
 - Use the Search bar to find you favorites movies and their information
 - Bookmark and use the App at your own pace!
 
+<<<<<<< HEAD
 # Hope You Enjoy the App !
+=======
+>>>>>>> 519420c1dc55a5ee4e7b30ed78e584205f83d801
 
